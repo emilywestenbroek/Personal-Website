@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<main>
+  <a href="#main" class=c-skip-to>Skip to main content.</a>
   {% include header.html %}
+<main id="main" tabindex:"-1" style="outline: none">
     {{ content }}
   {% include footer.html %}
 </main>
