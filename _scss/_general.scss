@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration-skip: ink;
+  text-decoration-color: inherit;
+}
+
+// Remove default outline from anything
+// that includes tabindex="-1"
+[tabindex="-1"] {
+  outline: none;
+}

@@ -8,13 +8,10 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ emilywestenbroek.github.io }}">{{ post_url 2018-01-21-debugging-tips-and-tricks }}</a>
-    </li>
-    <li>
-      <a href="{{ emilywestenbroek.github.io }}">{{ post_url 2018-01-20-accessibility-through-symantic-html }}</a>
-    </li>
-    <li>
-      <a href="{{ emilywestenbroek.github.io }}">{{ post_url 2018-01-18-lets-get-started }}</a>
+      <article>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.content }}
+      </article>
     </li>
   {% endfor %}
 </ul>

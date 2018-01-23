@@ -10,3 +10,6 @@ title: Emily Westenbroek - Personal Site
 description: Emily Westenbroek - Personal Site
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "emilywestenbroek.github.io" # the base hostname & protocol for your site
+sass:
+  sass_dir: _scss
+  style: compressed
