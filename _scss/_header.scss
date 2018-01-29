@@ -1,15 +1,21 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .header-title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  margin-top: 10px;
 
   span {
     font-weight: 700;
   }
+}
+
+.nav {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 nav li {
@@ -21,4 +27,6 @@ padding: 5px;
 .nav-item > a {
   text-decoration: none;
   color: #000;
+  display: flex;
+  align-items: center;
 }
