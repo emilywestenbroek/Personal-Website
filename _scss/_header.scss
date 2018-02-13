@@ -5,10 +5,20 @@
 
 .header-title {
   font-family: "Raleway", sans-serif;
+  // border-bottom: 2px;
+  font-size: 20px;
   font-weight: 400;
   margin-top: 10px;
 
   span {
     font-weight: 700;
   }
+}
+
+.nav-item {
+  width: 100px;
+  height: 20px;
+}
+.nav-list a:hover {
+  color: #a3b2cc;
 }
