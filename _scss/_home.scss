@@ -2,6 +2,11 @@
 
 }
 
+.tagline-container {
+  border-bottom: 2px #9da0a5;
+  // border line is not appearing yet
+}
+
 .tagline {
   display: flex;
   justify-content: center;
@@ -22,7 +27,7 @@
 .blog-link {
   color: #5f718e;
   text-decoration: none;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .blog-link:hover {
