@@ -11,7 +11,7 @@ description: >
 {{ page.description | markdownify }}
 
 <ul>
-  {% for post in site.posts limit: 5%}
+  {% for post in site.posts %}
     <li>
       <article class="blog">
         <h2><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h2>
