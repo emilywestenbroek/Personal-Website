@@ -1,11 +1,15 @@
 ---
 layout: default
----
-<div class="tagline-container">
-  <p class="tagline">I am an aspiring front-end developer, craft beer lover, and impassioned learner.</p>
-</div>
+permalink: /blog/
+title: Blog
+description: >
+  There's so much to learn out there, and I'm excited to keep exploring. This is where
+  I share some of the things I've encountered lately.
+  ---
 
-<h1 class="recent-header">Recent</h1>
+<h2>{{ page.title }}</h2>
+{{ page.description | markdownify }}
+
 <ul>
   {% for post in site.posts limit: 5%}
     <li>
@@ -16,4 +20,3 @@ layout: default
     </li>
   {% endfor %}
 </ul>
-<button><a href="blog.html">Archived Posts</a></button>
