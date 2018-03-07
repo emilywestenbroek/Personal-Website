@@ -1,14 +1,25 @@
-.resume {
- background-color: white;
+h1, h2, h3 {
+  font-family: "Six Caps", sans-serif;
 }
 
-.section-container {
+.resume-title {
+  font-size: 100px;
+  font-weight: lighter;
+  border-bottom: 1px solid #6A7887;
+
+}
+
+.section-container, .resume-title {
   margin-left: 20%;
   margin-right: 20%;
   padding: 20px;
 
 }
 .section-title {
+  font-size: 50px;
+  // font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 1.5;
   position: sticky;
   top: 0px;
   background-color: #f9f9f9;
