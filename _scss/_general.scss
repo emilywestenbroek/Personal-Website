@@ -30,6 +30,10 @@ fieldset, legend {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-family: var(--primary-font);
+}
+
 a {
   text-decoration-skip: ink;
   text-decoration-color: inherit;
