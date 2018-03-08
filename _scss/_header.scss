@@ -6,7 +6,7 @@ header {
 }
 
 .header-title {
-  font-family: "Six Caps", sans-serif;
+  font-family: var(--title-font-size-med);
   font-size: 50px;
   font-weight: 400;
 }

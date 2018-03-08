@@ -1,9 +1,10 @@
 h1, h2, h3 {
-  font-family: "Six Caps", sans-serif;
+  // font-family: var(--primary-font);
 }
 
 .resume-title {
-  font-size: var(--page-title-font-size);
+  // font-size: var(--title-font-size-lg);
+  font-size: 150px;
   font-weight: lighter;
   border-bottom: 1px solid #6A7887;
 
@@ -16,7 +17,7 @@ h1, h2, h3 {
 
 }
 .section-title {
-  font-size: 50px;
+  font-size: var(--title-font-size-med);
   // font-weight: lighter;
   text-transform: uppercase;
   line-height: 1.5;
