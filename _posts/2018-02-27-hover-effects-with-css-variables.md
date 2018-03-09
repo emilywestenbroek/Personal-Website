@@ -5,4 +5,4 @@ link: https://blog.prototypr.io/stunning-hover-effects-with-css-variables-f855e7
 ---
 
 Although this effect is a little gaudy for my taste, this is a really fun look at
-using JavaScript to add some user delight to a simple button interaction.
+using JavaScript and CSS variables to add some user delight to a simple button interaction.
