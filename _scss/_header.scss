@@ -10,22 +10,22 @@ header {
 
      .primary & {
            background-image: linear-gradient(to right, var(--primary-color-home),
-           var(--secondary-color-home));
+           var(--secondary-color-all);
      }
 
      .about & {
            background-image: linear-gradient(to right, var(--primary-color-about),
-           var(--secondary-color-about));
+           var(--secondary-color-all));
      }
 
      .resume & {
            background-image: linear-gradient(to right, var(--primary-color-resume),
-           var(--secondary-color-resume));
+           var(--secondary-color-all));
      }
 
      .blog & {
            background-image: linear-gradient(to right, var(--primary-color-blog),
-           var(--secondary-color-blog));
+           var(--secondary-color-all);
      }
 }
 
@@ -39,7 +39,7 @@ header {
 
 nav {
   align-items: center;
-  // margin-right: 20px;
+
 }
 
 .nav-list {
@@ -51,7 +51,7 @@ nav {
   width: auto;
   height: 20px;
   margin: 0px 20px;
-  color: #FFF;
+  // color: #FFF;
 }
 
 .nav-list a:hover {
