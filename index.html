@@ -10,7 +10,7 @@ theme: primary
 <ul>
   {% for post in site.posts limit:5 %}
     <li>
-      <article class="blog">
+      <article class="blog-entry">
         <h2><a class="blog-link" href="{{ post.link }}">{{ post.title }}</a></h2>
         {{ post.content }}
       </article>
