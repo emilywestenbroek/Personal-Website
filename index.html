@@ -6,15 +6,17 @@ theme: primary
   <p class="tagline">I am an aspiring front-end developer, craft beer lover, and impassioned learner.</p>
 </div>
 
-<h1 class="recent-header">Recent</h1>
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
+<div class="recent-container">
+  <h1 class="recent-header">Recent</h1>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li class="recent-list-item">
       <article class="blog-entry">
         <h2><a class="blog-link" href="{{ post.link }}">{{ post.title }}</a></h2>
         {{ post.content }}
       </article>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>
 <button><a href="/blog">Archived Posts</a></button>
