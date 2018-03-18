@@ -5,8 +5,9 @@
 .tagline {
   // display: flex;
   // justify-content: center;
-  font-size: var(--title-font-size-med);
+  font-size: var(--title-font-size-lg);
   font-family: var(--primary-font);
+  text-transform: uppercase;
 
   .break {
     display: table;
@@ -22,26 +23,30 @@
   .intro-item-one {
     grid-column: 1/2;
     grid-row: 1/2;
+
   }
 
   .intro-item-two {
     grid-column: 1/2;
     grid-row: 2/3;
+
+
   }
 
   .intro-item-three {
     grid-column: 2/3;
     grid-row: 1/3;
+
   }
 
 }
 
 .home-img {
-  width: 320px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   filter: grayscale(30%);
   border-radius: 2px;
-  margin: 0 50px;
+  margin: 20px 0;
 }
 
 .recent-container {
