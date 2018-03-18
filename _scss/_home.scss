@@ -59,19 +59,20 @@
     margin: 20px 0;
   }
 
-  .blog-entry {
+  .recent-entry {
     // margin: 20px 0;
   }
 
-  .blog-link {
+  .recent-link {
     font-size: var(--title-font-size-med);
     text-transform: uppercase;
+    font-weight: lighter;
     color: var(--heading-color);
     text-decoration: none;
     // margin: 20px 0;
   }
 
-  .blog-link:hover {
+  .recent-link:hover {
     color: var(--hover-color);
     text-decoration: none;
   }

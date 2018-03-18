@@ -18,8 +18,8 @@ theme: primary
   <ul>
     {% for post in site.posts limit:5 %}
     <li class="recent-list-item">
-      <article class="blog-entry">
-        <h2><a class="blog-link" href="{{ post.link }}">{{ post.title }}</a></h2>
+      <article class="recent-entry">
+        <h2><a class="recent-link" href="{{ post.link }}">{{ post.title }}</a></h2>
         {{ post.content }}
       </article>
     </li>
