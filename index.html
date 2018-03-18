@@ -20,7 +20,7 @@ theme: primary
     <li class="recent-list-item">
       <article class="recent-entry">
         <h2><a class="recent-link" href="{{ post.link }}">{{ post.title }}</a></h2>
-        {{ post.content }}
+        <p class="recent-content">{{ post.content }}</p>
       </article>
     </li>
     {% endfor %}

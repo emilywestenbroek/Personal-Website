@@ -10,6 +10,9 @@
     border-bottom: 1px solid var(--heading-color);
   }
 
+  .blog-tagline {
+    margin: 40px 0;
+  }
   .blog-list-item {
     list-style: none;
     margin: 20px 0;
@@ -30,5 +33,9 @@
   .blog-link:hover {
     color: var(--hover-color);
     text-decoration: none;
+  }
+
+  .blog-content {
+    margin: 20px 0;
   }
 }

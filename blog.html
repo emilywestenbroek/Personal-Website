@@ -6,7 +6,7 @@ theme: blog
 ---
 <div class="blog-container">
   <h2 class="blog-title">Blog</h2>
-  <p>There's so much to learn out there, and I'm excited to keep exploring. This is where
+  <p class="blog-tagline">There's so much to learn out there, and I'm excited to keep exploring. This is where
     I share some of the things I've encountered lately.</p>
 
     <ul>
@@ -14,7 +14,7 @@ theme: blog
       <li class="blog-list-item">
         <article class="blog-entry">
           <h2><a class="blog-link" href="{{ post.link }}">{{ post.title }}</a></h2>
-          {{ post.content }}
+          <p class="blog-content">{{ post.content }}</p>
         </article>
       </li>
       {% endfor %}
