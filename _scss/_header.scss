@@ -1,3 +1,7 @@
+// * {
+//   border: 1px solid red;
+// }
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -39,7 +43,8 @@
        font-family: var(--secondary-font);
        font-size: 18px;
        color: #FFF;
-       margin-left: 20px
+       margin-left: 20px;
+       margin-top: -10px;
      }
 
      .nav-list {
@@ -61,5 +66,24 @@
        color: var(--heading-color);
        border-bottom: 2px solid var(--heading-color);
      }
+
+}
+
+.intro-container {
+  display: grid;
+  grid-column: 1fr, 1fr;
+  
+
+  .intro-item-one {
+
+  }
+
+  .intro-item-two {
+
+  }
+
+  .intro-item-three {
+
+  }
 
 }
