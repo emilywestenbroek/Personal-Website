@@ -10,6 +10,8 @@
 .home-img {
   width: 320px;
   height: 400px;
+  filter: grayscale(30%);
+  border-radius: 2px;
 }
 
 .recent-container {
