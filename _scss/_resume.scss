@@ -1,23 +1,24 @@
-// .blog-container {
-//     margin: 0 20%;
-// }
+.resume-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 .resume-title {
   font-size: var(--title-font-size-lg);
   font-weight: lighter;
   text-transform: uppercase;
   border-bottom: 1px solid var(--heading-color);
-
+  margin-top: 50px;
+  padding: 20px 0;
 }
 
-.section-container, .resume-title {
-  margin: 0 20%;
-  padding: 20px;
+.section-container {
+  padding-top: 20px;
 
 }
 .section-title {
   font-size: 50px;
-  // font-weight: 400;
+  font-weight: lighter;
   text-transform: uppercase;
   line-height: 1.5;
   position: sticky;
@@ -27,9 +28,9 @@
   z-index: 1;
 }
 
-p {
+.resume-info-container {
   position: relative;
-  font-size: 18px;
+  font-size: var(--content-font-size);
   letter-spacing: 1.5;
   padding: 10px 0;
 }

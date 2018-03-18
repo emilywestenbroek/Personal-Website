@@ -6,7 +6,7 @@
   display: grid;
   grid-column: 1fr, 1fr;
   grid-row: 200px, 100px, 400px;
-  margin: 0 15%;
+  margin: 50px 15% 0 15%;
 
 
   .about-item-one {
@@ -41,5 +41,6 @@
   font-weight: lighter;
   text-transform: uppercase;
   font-weight: lighter;
-  border-bottom: 1px solid #6A7887
+  border-bottom: 1px solid #6A7887;
+  padding: 20px 0;
 }
