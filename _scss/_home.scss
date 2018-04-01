@@ -87,16 +87,16 @@
   justify-content: center;
 
 .button {
-  width: 150px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 40px;
   background-color: var(--background-color);
   border: 1px solid var(--heading-color);
   border-radius: 2px;
   margin: 50px 0;
   transition:0.3s ease-in-out;
-}
-
-button a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--secondary-font);
@@ -114,10 +114,10 @@ button a:hover {
   color: var(--hover-color);
 }
 
-.button:hover,
-.button:active {
-  letter-spacing: 1px;
-}
+// .button:hover,
+// .button:active {
+//   letter-spacing: 1px;
+// }
 
 // .button:after,
 // .button:before {
