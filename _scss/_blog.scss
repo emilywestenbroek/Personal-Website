@@ -38,4 +38,8 @@
   .blog-content {
     margin: 20px 0;
   }
+
+  ::selection {
+    background-color: #ebc6c5;
+  }
 }

@@ -29,7 +29,7 @@
     grid-row: 2/3;
     font-family: var(--secondary-font);
     font-size: var(--content-font-size);
-    line-height: 1.3;
+    line-height: 1.5;
     margin-right: 15px;
     margin-top: 0;
   }
@@ -38,6 +38,10 @@
     grid-column: 2/3;
     grid-row: 1/3;
     margin-top: 0;
+  }
+
+  ::selection {
+    background-color: #ccb5bf;
   }
 
 }
@@ -86,6 +90,10 @@
 
   .recent-content {
     margin: 20px 0;
+  }
+
+  ::selection {
+    background-color: #ccb5bf;
   }
 }
 
