@@ -44,6 +44,37 @@
     }
   }
 
+  .contact-me-container {
+
+    .contact-me-title {
+      font-size: var(--title-font-size-lg);
+      font-weight: lighter;
+      text-transform: uppercase;
+      border-bottom: 1px solid #6A7887;
+      padding: 20px 0;
+    }
+
+    .contact-me-tagline {
+      margin-top: 20px;
+      font-size: var(--content-font-size);
+    }
+
+    .contact-list {
+      font-size: var(--content-font-size);
+      list-style: none;
+      line-height: 2;
+    }
+
+    .contact-link {
+      color: var(--body-color);
+    }
+
+    .contact-link:hover {
+      color: var(--hover-color);
+    }
+
+  }
+
   ::selection {
     background: #97a5c6;
   }
