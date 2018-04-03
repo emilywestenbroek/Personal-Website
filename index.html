@@ -2,30 +2,33 @@
 layout: default
 theme: primary
 ---
+<div class="center">
+  <div>
+    <section class="intro-container">
 
-<section class="intro-container">
-
-<div class="tagline-container intro-item-one">
-  <p class="tagline break">I am an aspiring front-end developer,<span class="break"> craft beer lover,</span><span class="break"> and impassioned learner.</span></p>
-</div>
-<div>
-  <p class="intro-item-two">I just graduated from the Front-End Development Bootcamp through Grand Circus. In this course I learned so much about HTML, CSS, and JavaScript, and I'm excited to take these to a full-time role as a developer.</p>
-</div>
-<img class="home-img intro-item-three" src="/images/home.jpg" alt="Emily Westenbroek" />
-</section>
-<div class="recent-container">
-  <h1 class="recent-header">Recent</h1>
-  <ul>
-    {% for post in site.posts limit:5 %}
-    <li class="recent-list-item">
-      <article class="recent-entry">
-        <h2><a class="recent-link" href="{{ post.link }}">{{ post.title }}</a></h2>
-        <p class="recent-content">{{ post.content }}</p>
-      </article>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-<div class="button-container">
-<a class="button" href="/blog">Archived Posts</a>
+      <div class="tagline-container intro-item-one">
+        <p class="tagline break">I am an aspiring front-end developer,<span class="break"> craft beer lover,</span><span class="break"> and impassioned learner.</span></p>
+      </div>
+      <div>
+        <p class="intro-item-two">I just graduated from the Front-End Development Bootcamp through Grand Circus. In this course I learned so much about HTML, CSS, and JavaScript, and I'm excited to take these to a full-time role as a developer.</p>
+      </div>
+      <img class="home-img intro-item-three" src="/images/home.jpg" alt="Emily Westenbroek" />
+    </section>
+    <div class="recent-container">
+      <h1 class="recent-header">Recent</h1>
+      <ul>
+        {% for post in site.posts limit:5 %}
+        <li class="recent-list-item">
+          <article class="recent-entry">
+            <h2><a class="recent-link" href="{{ post.link }}">{{ post.title }}</a></h2>
+            <p class="recent-content">{{ post.content }}</p>
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="button-container">
+      <a class="button" href="/blog">Archived Posts</a>
+    </div>
+  </div>
 </div>

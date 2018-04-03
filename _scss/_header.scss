@@ -36,6 +36,14 @@
        font-weight: 400;
        text-transform: uppercase;
        color: #FFF;
+
+       @include mq($from: tablet, $until: desktop) {
+        font-size: var(--tablet-title-font-size-lg);
+       }
+     }
+
+     .header-title-container {
+       margin-left: 15%;
      }
 
      .header-tagline {

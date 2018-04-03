@@ -28,6 +28,11 @@
       font-weight: lighter;
       border-bottom: 1px solid #6A7887;
       padding-bottom: 20px;
+
+      @include mq($from: tablet, $until: desktop) {
+       font-size: var(--tablet-title-font-size-lg);
+      }
+
     }
 
     .about-tagline {
@@ -52,6 +57,11 @@
       text-transform: uppercase;
       border-bottom: 1px solid #6A7887;
       padding: 20px 0;
+
+      @include mq($from: tablet, $until: desktop) {
+       font-size: var(--tablet-title-font-size-lg);
+      }
+
     }
 
     .contact-me-tagline {

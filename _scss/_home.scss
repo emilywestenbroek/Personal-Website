@@ -1,11 +1,21 @@
 .home {
-
+  background-color: var(--background-color);
 }
+
+// .center {
+//   display: flex;
+//   justify-content: center;
+//   max-width: 1500px;
+// }
 
 .tagline {
   font-size: var(--title-font-size-lg);
   font-family: var(--primary-font);
   text-transform: uppercase;
+
+  @include mq($from: tablet, $until: desktop) {
+   font-size: var(--title-font-size-med);
+  }
 
   .break {
     display: table;
@@ -17,6 +27,7 @@
   grid-column: 1fr, 1fr;
   grid-gap: 15px;
   margin: 50px 15%;
+  // max-width: 1400px;
 
 
   .intro-item-one {
@@ -51,11 +62,16 @@
   height: 500px;
   filter: grayscale(30%);
   border-radius: 2px;
-  // margin: 20px 0;
+
+  @include mq($from: tablet, $until: desktop) {
+   width: 240px;
+   height: 300px;
+  }
 }
 
 .recent-container {
   margin: 0 15%;
+  // max-width: 1800px;
 
   .recent-header {
     font-size: var(--title-font-size-lg);
@@ -63,6 +79,10 @@
     text-transform: uppercase;
     padding: 20px 0;
     border-bottom: 1px solid var(--heading-color);
+
+    @include mq($from: tablet, $until: desktop) {
+     font-size: var(--tablet-title-font-size-lg);
+    }
   }
 
   .recent-list-item {
@@ -71,7 +91,6 @@
   }
 
   .recent-entry {
-    // margin: 20px 0;
   }
 
   .recent-link {
@@ -80,7 +99,6 @@
     font-weight: lighter;
     color: var(--heading-color);
     text-decoration: none;
-    // margin: 20px 0;
   }
 
   .recent-link:hover {
@@ -101,57 +119,52 @@
   display: flex;
   justify-content: center;
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 40px;
-  background-color: var(--background-color);
-  border: 1px solid var(--heading-color);
-  border-radius: 2px;
-  margin: 50px 0;
-  transition:0.3s ease-in-out;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: var(--secondary-font);
-  font-size: var(--content-font-size);
-  color: var(--heading-color);
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background-color: var(--background-color);
+    border: 1px solid var(--heading-color);
+    border-radius: 2px;
+    margin: 50px 0;
+    transition:0.3s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: var(--content-font-size);
+    color: var(--heading-color);
+  }
+
+  .button:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  }
+
+  button a:hover {
+    color: var(--hover-color);
+  }
+
 }
 
-.button:hover {
-  color: var(--hover-color);
-  border: 1px solid var(--hover-color);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
+/////// Media Queries
 
-button a:hover {
-  color: var(--hover-color);
-}
-
-// .button:hover,
-// .button:active {
-//   letter-spacing: 1px;
-// }
-
-// .button:after,
-// .button:before {
-//   backface-visibility: hidden;
-//   border: 1px solid rgba(var(--heading-color), 0);
-//   bottom: 0px;
-//   content: " ";
-//   display: block;
-//   margin: 0 auto;
-//   position: relative;
-//   transition: all 280ms ease-in-out;
-//   width: 0;
-// }
+// $mq-breakpoints: (
+//     mobile:  320px,
+//     tablet:  740px,
+//     desktop: 980px,
+//     wide:    1300px
+// );
 //
-// .button:hover:after,
-// .button:hover:before {
-//   backface-visibility: hidden;
-//   border-color: var(--heading-color);
-//   transition: width 350ms ease-in-out;
+// @import 'mq';
+//
+// .foo {
+//     @include mq($from: mobile, $until: tablet) {
+//         background: red;
+//     }
+//     @include mq($from: tablet) {
+//         background: green;
+//     }
 // }
-
-}
