@@ -13,8 +13,9 @@
   font-family: var(--primary-font);
   text-transform: uppercase;
 
-  @include mq($from: tablet, $until: desktop) {
-   font-size: var(--title-font-size-med);
+  @include mq($from: mobile, $until: tablet) {
+    font-size: var(--title-font-size-med);
+    // letter-spacing: 1.2;
   }
 
   .break {
@@ -29,11 +30,21 @@
   margin: 50px 15%;
   // max-width: 1400px;
 
+  @include mq($from: mobile, $until: tablet) {
+    display: flex;
+    flex-direction: column;
+    margin: 30px var(--mobile-sidebar-margin);
+  }
+
 
   .intro-item-one {
     grid-column: 1/2;
     grid-row: 1/2;
+
+  @include mq($from: mobile, $until: tablet){
+    margin-bottom: 10px;
   }
+}
 
   .intro-item-two {
     grid-column: 1/2;
@@ -43,6 +54,10 @@
     line-height: 1.5;
     margin-right: 15px;
     margin-top: 0;
+
+    @include mq($from: mobile, $until: tablet){
+      margin-bottom: 10px;
+    }
   }
 
   .intro-item-three {
@@ -64,14 +79,30 @@
   border-radius: 2px;
 
   @include mq($from: tablet, $until: desktop) {
-   width: 240px;
-   height: 300px;
+    width: 240px;
+    height: 300px;
   }
+
+
+  @include mq($from: mobile, $until: tablet) {
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  // @include mq($from: mobile, $until: tablet) {
+  //   width: ;
+  //   height: ;
+  // }
 }
 
 .recent-container {
   margin: 0 15%;
   // max-width: 1800px;
+
+  @include mq($from: mobile, $until: tablet) {
+    margin: 0 var(--mobile-sidebar-margin);
+  }
 
   .recent-header {
     font-size: var(--title-font-size-lg);
@@ -81,7 +112,11 @@
     border-bottom: 1px solid var(--heading-color);
 
     @include mq($from: tablet, $until: desktop) {
-     font-size: var(--tablet-title-font-size-lg);
+      font-size: var(--tablet-title-font-size-lg);
+    }
+
+    @include mq($from: mobile, $until: tablet) {
+      font-size: var(--title-font-size-med);
     }
   }
 

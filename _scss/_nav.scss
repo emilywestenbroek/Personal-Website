@@ -1,11 +1,17 @@
 .nav-bar {
   margin-right: 15%;
+
+  @include mq($from: mobile, $until: tablet) {
+    margin-right: var(--mobile-sidebar-margin);
+  }
+}
+
+.nav-list {
 }
 
 .nav-item {
-display: inline-block;
-
-padding: 5px;
+  display: inline-block;
+  padding: 5px;
 }
 
 .nav-item > a {

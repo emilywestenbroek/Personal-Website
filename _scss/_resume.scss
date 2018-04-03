@@ -11,6 +11,10 @@
     border-bottom: 1px solid var(--heading-color);
     margin-top: 50px;
     padding-bottom: 20px;
+
+    @include mq($from: tablet, $until: desktop) {
+     font-size: var(--tablet-title-font-size-lg);
+    }
   }
 
   .section-container {
@@ -30,6 +34,10 @@
     font-weight: lighter;
     text-transform: uppercase;
     line-height: 1.5;
+
+    @include mq($from: tablet, $until: desktop) {
+     font-size: var(--tablet-title-font-size-lg);
+    }
   }
 
   .resume-subtitle {
