@@ -5,6 +5,23 @@
 .about-container {
   margin: 50px 15%;
 
+  @include mq($from: mobile, $until: tablet) {
+    margin: 50px var(--mobile-sidebar-margin);
+  }
+
+  @include mq($from: mobile, $until: tablet) {
+    // display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobile-image-container {
+    @include mq($from: mobile, $until: tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   .about-image {
     margin: 0 20px 20px 0;
     width: 400px;
@@ -12,9 +29,15 @@
     border-radius: 2px;
     float: left;
 
-    @include mq($from: tablet, $until: desktop) {
-     height: 200px;
-     width: 200px;
+    @include mq($from: mobile, $until: desktop) {
+      height: 200px;
+      width: 200px;
+    }
+
+    @include mq($from: mobile, $until: tablet) {
+      position: absolute;
+      z-index: 2;
+      top: 150px;
     }
   }
 
@@ -35,7 +58,13 @@
       padding-bottom: 20px;
 
       @include mq($from: tablet, $until: desktop) {
-       font-size: var(--tablet-title-font-size-lg);
+        font-size: var(--tablet-title-font-size-lg);
+      }
+
+      @include mq($from: mobile, $until: tablet) {
+        float: none;
+        margin-bottom: 250px;
+        text-align: center;
       }
 
     }
@@ -45,6 +74,10 @@
       font-family: var(--primary-font);
       text-transform: uppercase;
       padding-top: 20px;
+
+      @include mq($from: mobile, $until: tablet) {
+        // display: block;
+      }
     }
 
     .about-story {
@@ -64,7 +97,7 @@
       padding: 20px 0;
 
       @include mq($from: tablet, $until: desktop) {
-       font-size: var(--tablet-title-font-size-lg);
+        font-size: var(--tablet-title-font-size-lg);
       }
 
     }
