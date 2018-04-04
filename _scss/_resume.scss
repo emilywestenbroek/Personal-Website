@@ -72,22 +72,23 @@
   .resume-info-container {
     position: relative;
     font-size: var(--content-font-size);
-    letter-spacing: 1.5;
+    letter-spacing: 1px;
     padding: 10px 0;
 
     @include mq($from: mobile, $until: tablet) {
      font-size: var(--mobile-content-font-size);
     }
+
   }
+
+.education-section > p {
+  line-height: 1.5;
+}
 
 .experience-list {
   list-style: square;
   line-height: 1.5;
   margin-left: 20px;
-
-  @include mq($from: mobile, $until: tablet) {
-   // margin-left: 25px;
-  }
 }
 
 .dates, .location {
