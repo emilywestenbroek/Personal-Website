@@ -89,6 +89,14 @@
   list-style: square;
   line-height: 1.5;
   margin-left: 20px;
+
+  .taco-time-link {
+    color: var(--body-color);
+  }
+
+  .taco-time-link:hover {
+    color: var(--hover-color);
+  }
 }
 
 .dates, .location {
