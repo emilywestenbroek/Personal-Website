@@ -2,6 +2,11 @@
 
   .resume-container {
     margin: 50px 15%;
+
+    @include mq($from: mobile, $until: tablet) {
+     margin: 50px var(--mobile-sidebar-margin);
+    }
+
   }
 
   .resume-title {
@@ -27,6 +32,10 @@
     background-color: var(--background-color);
     padding: 30px 0;
     z-index: 1;
+
+    @include mq($from: mobile, $until: tablet) {
+     padding: 15px 0;
+    }
   }
 
   .section-title {
@@ -38,6 +47,10 @@
     @include mq($from: tablet, $until: desktop) {
      font-size: var(--tablet-title-font-size-lg);
     }
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--title-font-size-med);
+    }
   }
 
   .resume-subtitle {
@@ -45,6 +58,11 @@
     font-weight: lighter;
     text-transform: uppercase;
     margin-top: 30px;
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--mobile-content-font-size);
+     font-family: var(--secondary-font);
+    }
   }
 
     .first-subtitle {
@@ -56,17 +74,29 @@
     font-size: var(--content-font-size);
     letter-spacing: 1.5;
     padding: 10px 0;
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--mobile-content-font-size);
+    }
   }
 
 .experience-list {
   list-style: square;
   line-height: 1.5;
   margin-left: 20px;
+
+  @include mq($from: mobile, $until: tablet) {
+   // margin-left: 25px;
+  }
 }
 
 .dates, .location {
   margin: 15px 0;
   font-weight: 600;
+
+  @include mq($from: mobile, $until: tablet) {
+   margin-left: 2px;
+  }
 }
 
 .bold {
