@@ -15,7 +15,7 @@
 
   @include mq($from: mobile, $until: tablet) {
     font-size: var(--title-font-size-med);
-    // letter-spacing: 1.2;
+    letter-spacing: 1px;
   }
 
   .break {
@@ -117,6 +117,7 @@
 
     @include mq($from: mobile, $until: tablet) {
       font-size: var(--title-font-size-med);
+      letter-spacing: 1px;
     }
   }
 
@@ -134,6 +135,7 @@
     font-weight: lighter;
     color: var(--heading-color);
     text-decoration: none;
+    letter-spacing: 1px;
   }
 
   .recent-link:hover {
