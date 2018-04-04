@@ -84,6 +84,10 @@
       font-size: var(--content-font-size);
       line-height: 1.5;
       padding-top: 20px;
+
+      @include mq($from: mobile, $until: tablet) {
+       font-size: var(--mobile-content-font-size);
+      }
     }
   }
 
@@ -105,16 +109,31 @@
     .contact-me-tagline {
       margin-top: 20px;
       font-size: var(--content-font-size);
+      line-height: 1.5;
+
+      @include mq($from: mobile, $until: tablet) {
+       font-size: var(--mobile-content-font-size);
+      }
     }
 
     .contact-list {
       font-size: var(--content-font-size);
       list-style: none;
       line-height: 2;
+
+      @include mq($from: mobile, $until: tablet) {
+       font-size: var(--mobile-content-font-size);
+       // display: ;
+      }
     }
 
     .contact-link {
       color: var(--body-color);
+
+      @include mq($from: mobile, $until: tablet) {
+       display: block;
+       word-wrap: break-word;
+      }
     }
 
     .contact-link:hover {
