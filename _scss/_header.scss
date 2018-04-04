@@ -10,6 +10,7 @@
   height: 200px;
 
   @include mq($from: mobile, $until: tablet) {
+    height: 150px
   }
 
      .primary & {
