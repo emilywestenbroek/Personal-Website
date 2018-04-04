@@ -1,6 +1,10 @@
 .blog-container {
   margin: 50px 15%;
 
+  @include mq($from: mobile, $until: tablet) {
+   margin: 50px var(--mobile-sidebar-margin);
+  }
+
   .blog-title {
     font-size: var(--title-font-size-lg);
     font-weight: lighter;
