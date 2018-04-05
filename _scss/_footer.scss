@@ -1,0 +1,20 @@
+.footer {
+
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style-type: none;
+}
+
+.icon-list li {
+  padding: 15px;
+}
+
+.social-media-icon {
+  height: 30px;
+  width: 30px;
+  // fill: var(--body-color);
+}

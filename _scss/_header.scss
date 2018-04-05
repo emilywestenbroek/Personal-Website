@@ -1,0 +1,97 @@
+// * {
+//   border: 1px solid red;
+// }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+
+  @include mq($from: mobile, $until: tablet) {
+    height: 150px
+  }
+
+     .primary & {
+           background-color: var(--primary-color-home);
+     }
+
+     .about & {
+           background-color: var(--primary-color-about);
+     }
+
+     .resume & {
+           background-color: var(--primary-color-resume);
+     }
+
+     .blog & {
+           background-color: var(--primary-color-blog);
+     }
+
+     .header-title-container {
+       display: flex;
+       flex-direction: column;
+     }
+
+     .header-title {
+       font-family: var(--primary-font);
+       font-size: var(--title-font-size-lg);
+       font-weight: 400;
+       text-transform: uppercase;
+       color: #FFF;
+
+       @include mq($from: tablet, $until: desktop) {
+        font-size: var(--tablet-title-font-size-lg);
+       }
+
+       @include mq($from: mobile, $until: tablet) {
+        font-size: var(--title-font-size-med);
+       }
+     }
+
+     .header-title-container {
+       margin-left: 15%;
+
+       @include mq($from: mobile, $until: tablet) {
+         margin-left: var(--mobile-sidebar-margin);
+       }
+     }
+
+     .header-tagline {
+       font-family: var(--secondary-font);
+       font-size: 18px;
+       color: #FFF;
+       margin-top: -5px;
+
+       @include mq($from: mobile, $until: tablet) {
+        font-size: var(--mobile-content-font-size);
+        margin-top: auto;
+       }
+     }
+
+     .nav-list {
+       display: flex;
+       flex-direction: row;
+
+       @include mq($from: mobile, $until: tablet) {
+         // width: 200px;
+         flex-direction: column;
+       }
+     }
+
+     .nav-item {
+       width: auto;
+       height: 20px;
+       margin: 0px 20px;
+     }
+
+     .nav-anchor {
+       color: #FFF;
+     }
+
+     .nav-list a:hover {
+       color: var(--heading-color);
+       border-bottom: 2px solid var(--heading-color);
+     }
+}

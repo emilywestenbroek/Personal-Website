@@ -1,0 +1,119 @@
+.resume {
+
+  .resume-container {
+    margin: 50px 15%;
+
+    @include mq($from: mobile, $until: tablet) {
+     margin: 50px var(--mobile-sidebar-margin);
+    }
+
+  }
+
+  .resume-title {
+    font-size: var(--title-font-size-lg);
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--heading-color);
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+    @include mq($from: tablet, $until: desktop) {
+     font-size: var(--tablet-title-font-size-lg);
+    }
+  }
+
+  .section-container {
+    padding-top: 20px;
+  }
+
+  .section-title-container {
+    position: sticky;
+    top: 0px;
+    background-color: var(--background-color);
+    padding: 30px 0;
+    z-index: 1;
+
+    @include mq($from: mobile, $until: tablet) {
+     padding: 15px 0;
+    }
+  }
+
+  .section-title {
+    font-size: var(--title-font-size-lg);
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 1.5;
+
+    @include mq($from: tablet, $until: desktop) {
+     font-size: var(--tablet-title-font-size-lg);
+    }
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--title-font-size-med);
+    }
+  }
+
+  .resume-subtitle {
+    font-size: var(--title-font-size-med);
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--mobile-content-font-size);
+     font-family: var(--secondary-font);
+    }
+  }
+
+    .first-subtitle {
+      margin-top: 0;
+    }
+
+  .resume-info-container {
+    position: relative;
+    font-size: var(--content-font-size);
+    letter-spacing: 1px;
+    padding: 10px 0;
+
+    @include mq($from: mobile, $until: tablet) {
+     font-size: var(--mobile-content-font-size);
+    }
+
+  }
+
+.education-section > p {
+  line-height: 1.5;
+}
+
+.experience-list {
+  list-style: square;
+  line-height: 1.5;
+  margin-left: 20px;
+
+  .taco-time-link {
+    color: var(--body-color);
+  }
+
+  .taco-time-link:hover {
+    color: var(--hover-color);
+  }
+}
+
+.dates, .location {
+  margin: 15px 0;
+  font-weight: 600;
+
+  @include mq($from: mobile, $until: tablet) {
+   margin-left: 2px;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+  ::selection {
+    background-color: #a8b4bd;
+  }
+
+}

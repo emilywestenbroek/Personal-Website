@@ -1,0 +1,11 @@
+.skip-to {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: none;
+  }
+}
