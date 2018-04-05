@@ -1,0 +1,194 @@
+// //
+// // --- Mixins --------------------------
+// //
+//
+// @mixin clearfix() {
+// 	&::after {
+// 		content: "";
+// 		display: table;
+// 		clear: both;
+// 	}
+// }
+// @mixin list-reset {
+// 	margin: 0;
+// 	padding: 0;
+// 	list-style-type: none;
+// }
+// @mixin min-up($min) {
+// 	@media only screen and (min-width: $min) { @content; }
+// }
+// @mixin vertical-align($val: 47%) {
+//
+// 	// unset
+// 	@if $val == 'none' {
+// 	    top: auto;
+//       -webkit-transform: none;
+//          -moz-transform: none;
+//           -ms-transform: none;
+//               transform: none;
+//
+//    	} @else {
+//         position: relative;
+//         top: $val;
+//         -webkit-transform: translateY(-50%);
+//            -moz-transform: translateY(-50%);
+//             -ms-transform: translateY(-50%);
+//                 transform: translateY(-50%);
+//    	}
+// }
+// @mixin hide-text {
+// 	display: block; 	// always needed
+// 	text-indent: 200%;
+// 	white-space: nowrap;
+// 	overflow: hidden;
+// }
+//
+//
+// //
+// // --- Variables --------------------------
+// //
+//
+// $primary: "Open Sans", sans-serif;
+// $nav-switch: 768px;
+//
+//
+// // --- Menu Button --------------------------
+// //
+//
+// .menu-btn {
+// 	position: absolute;
+// 	top: 0.75rem;
+// 	right: 1.25rem;
+// 	z-index: 9999;
+// 	display: block;
+// 	margin: 0;
+// 	padding: 0;
+// 	width: 41px;
+// 	height: 36px;
+// 	border: none;
+// 	background: none;
+// 	outline: none;
+// 	cursor: pointer;
+//
+//   // Hidden at larger screen
+//   @include min-up($nav-switch) {
+//     display: none;
+//   }
+//
+// 	span {
+//     @include hide-text;
+// 		position: relative;
+// 		top: 0;
+// 		margin: 0 auto;
+// 		width: 30px;
+// 		height: 3px;
+// 		background: #FFF;
+// 		overflow: hidden;
+// 		opacity: 1;
+// 		transition: all 0.1s ease-out;
+//
+// 		.nav-shown & {
+// 			opacity: 0;
+// 			transform: scale(0);
+// 		}
+// 	}
+//
+// 	&::before, &::after {
+// 		content: "";
+// 		position: absolute;
+// 		left: 0;
+// 		right: 0;
+// 		margin: 0 auto;
+// 		width: 30px;
+// 		height: 3px;
+// 		background: #FFF;
+// 		transition: all 0.1s ease-out;
+// 	}
+//
+// 	&::before {
+// 		top: 8px;
+//
+// 		.nav-shown & {
+// 			top: 18px;
+// 			transform: rotate(135deg);
+// 		}
+// 	}
+//
+// 	&::after {
+// 		bottom: 7px;
+//
+// 		.nav-shown & {
+// 			bottom: 15px;
+// 			transform: rotate(-135deg);
+// 		}
+// 	}
+// }
+//
+//
+// // --- Navigation --------------------------
+// //
+//
+// .nav {
+//   @include clearfix;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   margin: auto;
+//   opacity: 0;
+//   z-index: -1;
+//
+//   // JS button adds/removes this class
+//   .nav-shown & {
+//     opacity: 1;
+//     z-index: 999;
+//     background-color: rgba(0,0,0,0.85);
+//     transition: all 0.25s ease-out;
+//   }
+//
+//   @include min-up($nav-switch) {
+//     position: static;
+//     opacity: 1;
+//     padding: 2rem;
+//     width: auto;
+//     background-color: transparent !important; // make sure this overrides the .nav-shown class
+//   }
+// }
+//
+// .nav-list {
+//   @include clearfix;
+//   @include list-reset;
+//   @include vertical-align();
+//   margin: 0 auto;
+//
+//   @include min-up($nav-switch) {
+//       @include vertical-align('none');
+//       float: right;
+//   }
+//
+//   li {
+//     display: block;
+//     margin: 4rem;
+//     text-align: center;
+//
+//     @include min-up($nav-switch) {
+//       float: left;
+//       margin: 0 1rem;
+//     }
+//   }
+//
+//   a {
+//     display: inline-block;
+//     font-family: $secondary;
+//     font-size: 2rem;
+//     text-align: center;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     color: #FFF;
+//
+//     @include min-up($nav-switch) {
+//       font-size: 1rem;
+//     }
+//   }
+// }
