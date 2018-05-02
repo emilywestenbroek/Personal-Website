@@ -2,9 +2,9 @@
   margin: 50px 15%;
 
   @include mq($from: mobile, $until: tablet) {
-   margin: 50px var(--mobile-sidebar-margin);
+    margin: 50px var(--mobile-sidebar-margin);
   }
-
+  
   .blog-title {
     font-size: var(--title-font-size-lg);
     font-weight: lighter;
@@ -14,7 +14,7 @@
     border-bottom: 1px solid var(--heading-color);
 
     @include mq($from: desktop, $until: wide) {
-     font-size: var(--tablet-title-font-size-lg);
+      font-size: var(--tablet-title-font-size-lg);
     }
 
   }
@@ -48,6 +48,10 @@
 
   .blog-content {
     margin: 20px 0;
+  }
+
+  ::-moz-selection {
+    background-color: #ebc6c5;
   }
 
   ::selection {

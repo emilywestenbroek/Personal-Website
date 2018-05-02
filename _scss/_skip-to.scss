@@ -3,9 +3,11 @@
   top: 0;
   left: 0;
   text-decoration: none;
+  -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 
   &:focus {
+    -webkit-transform: none;
     transform: none;
   }
 }

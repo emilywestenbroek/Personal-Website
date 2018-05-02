@@ -2,9 +2,9 @@
 
   .resume-container {
     margin: 50px 15%;
-
+    
     @include mq($from: mobile, $until: tablet) {
-     margin: 50px var(--mobile-sidebar-margin);
+      margin: 50px var(--mobile-sidebar-margin);
     }
 
   }
@@ -18,7 +18,7 @@
     padding-bottom: 20px;
 
     @include mq($from: tablet, $until: desktop) {
-     font-size: var(--tablet-title-font-size-lg);
+      font-size: var(--tablet-title-font-size-lg);
     }
   }
 
@@ -27,6 +27,7 @@
   }
 
   .section-title-container {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     background-color: var(--background-color);
@@ -34,7 +35,7 @@
     z-index: 1;
 
     @include mq($from: mobile, $until: tablet) {
-     padding: 15px 0;
+      padding: 15px 0;
     }
   }
 
@@ -45,11 +46,11 @@
     line-height: 1.5;
 
     @include mq($from: tablet, $until: desktop) {
-     font-size: var(--tablet-title-font-size-lg);
+      font-size: var(--tablet-title-font-size-lg);
     }
 
     @include mq($from: mobile, $until: tablet) {
-     font-size: var(--title-font-size-med);
+      font-size: var(--title-font-size-med);
     }
   }
 
@@ -60,14 +61,14 @@
     margin-top: 30px;
 
     @include mq($from: mobile, $until: tablet) {
-     font-size: var(--mobile-content-font-size);
-     font-family: var(--secondary-font);
+      font-size: var(--mobile-content-font-size);
+      font-family: var(--secondary-font);
     }
   }
 
-    .first-subtitle {
-      margin-top: 0;
-    }
+  .first-subtitle {
+    margin-top: 0;
+  }
 
   .resume-info-container {
     position: relative;
@@ -76,41 +77,45 @@
     padding: 10px 0;
 
     @include mq($from: mobile, $until: tablet) {
-     font-size: var(--mobile-content-font-size);
+      font-size: var(--mobile-content-font-size);
     }
 
   }
 
-.education-section > p {
-  line-height: 1.5;
-}
-
-.experience-list {
-  list-style: square;
-  line-height: 1.5;
-  margin-left: 20px;
-
-  .taco-time-link {
-    color: var(--body-color);
+  .education-section > p {
+    line-height: 1.5;
   }
 
-  .taco-time-link:hover {
-    color: var(--hover-color);
+  .experience-list {
+    list-style: square;
+    line-height: 1.5;
+    margin-left: 20px;
+
+    .taco-time-link {
+      color: var(--body-color);
+    }
+
+    .taco-time-link:hover {
+      color: var(--hover-color);
+    }
   }
-}
 
-.dates, .location {
-  margin: 15px 0;
-  font-weight: 600;
+  .dates, .location {
+    margin: 15px 0;
+    font-weight: 600;
 
-  @include mq($from: mobile, $until: tablet) {
-   margin-left: 2px;
+    @include mq($from: mobile, $until: tablet) {
+      margin-left: 2px;
+    }
   }
-}
 
-.bold {
-  font-weight: 600;
-}
+  .bold {
+    font-weight: 600;
+  }
+
+  ::-moz-selection {
+    background-color: #a8b4bd;
+  }
 
   ::selection {
     background-color: #a8b4bd;
